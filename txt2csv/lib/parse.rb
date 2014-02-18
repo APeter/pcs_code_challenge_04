@@ -54,4 +54,13 @@ class Parse
             parsed_email = ["Not Found"] 
         end
     end
+
+    def self.parse_twitter (twitter_string)
+        if twitter_string.include?("@")
+            twitter_string[0] = ''
+            parsed_twitter = [twitter_string]
+        else
+            parsed_twitter = [twitter_string]
+        end
+    end
 end
