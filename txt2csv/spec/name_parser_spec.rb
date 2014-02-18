@@ -1,6 +1,6 @@
 require "spec_helper"
 
-require "parse_names.rb"
+require "parse.rb"
 
 # The format of the names looks to be something like:
 
