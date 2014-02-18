@@ -46,4 +46,12 @@ class Parse
     parsed_number.values
     end
 
+    def self.parse_email (email_string)
+
+        if email_string.match(/\w+[@]\w+[.]\w+/)
+            parsed_email = [email_string]
+        else
+            parsed_email = ["Not Found"] 
+        end
+    end
 end
